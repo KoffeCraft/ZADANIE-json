@@ -1,54 +1,84 @@
 package com.lusia.zadaniejson;
 
-import kotlin.jvm.internal.SerializedIr;
 import com.google.gson.annotations.SerializedName;
 
 public class Artykul {
+
     @SerializedName("id")
     private int id;
+
     @SerializedName("tytul")
     private String tytul;
+
     @SerializedName("data")
     private String data;
+
     @SerializedName("tresc")
     private String tresc;
 
-    public Artykul(int id, String tytul, String data, String tresc){
-        this.id = id;
-        this.tytul = tytul;
-        this.data = data;
-        this.tresc = tresc;
+    @SerializedName("kolorTytulu")
+    private String kolorTytulu = "#800938";
+
+    @SerializedName("rozmiarTytulu")
+    private float rozmiarTytulu = 24;
+
+    @SerializedName("kolorDaty")
+    private String kolorDaty = "#757575";
+
+    @SerializedName("rozmiarDaty")
+    private float rozmiarDaty = 12;
+
+    @SerializedName("kolorTresci")
+    private String kolorTresci = "#212121";
+
+    @SerializedName("rozmiarTresci")
+    private float rozmiarTresci = 16;
+
+    public Artykul() {
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getTytul() {
         return tytul;
-    }
-
-    public void setTytul(String tytul) {
-        this.tytul = tytul;
     }
 
     public String getData() {
         return data;
     }
 
-    public void setData(String data) {
-        this.data = data;
-    }
-
     public String getTresc() {
         return tresc;
     }
 
-    public void setTresc(String tresc) {
-        this.tresc = tresc;
+    public String getKolorTytulu() {
+        return kolorTytulu;
+    }
+
+    public float getRozmiarTytulu() {
+        return rozmiarTytulu;
+    }
+
+    public String getKolorDaty() {
+        return kolorDaty;
+    }
+
+    public float getRozmiarDaty() {
+        return rozmiarDaty;
+    }
+
+    public String getKolorTresci() {
+        return kolorTresci;
+    }
+
+    public float getRozmiarTresci() {
+        return rozmiarTresci;
+    }
+
+    @Override
+    public String toString() {
+        return tytul + "\n" + data + "\n" + tresc;
     }
 }

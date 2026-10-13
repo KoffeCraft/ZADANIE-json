@@ -11,7 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notatki:"
+        android:text="Nowości:"
+        android:textColor="#800938"
+        android:textFontWeight="550"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,5 +23,4 @@
         android:id="@+id/listViewNotatki"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </LinearLayout>
